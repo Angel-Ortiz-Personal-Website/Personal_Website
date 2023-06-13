@@ -1,0 +1,186 @@
+/*
+this will format all elements
+*/
+* {
+  margin: 0;
+  padding: 3px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font: "Gill Sans MT", sans-serif;
+}
+/*
+Adding background color and set height to the main body
+*/
+body {
+  min-height: 100px;
+  background-color: burlywood;
+}
+
+/*
+Css for the header/banner to have its own look
+*/
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 6vh;
+  background-color: seagreen;
+  border-style: double;
+  border-color: #097969;
+  /*
+flex makes the text go from left to right 
+*/
+  display: flex;
+  /*
+Justify-content added wil pit space in between the flex
+*/
+  justify-content: space-between;
+  /*
+  To center the logo to the center (on y axis)
+  */
+  align-items: left;
+  /*
+  This will give a shadowy effect under the border to make it pop
+  */
+  box-shadow: 0px 7px 20px #1c1e2091;
+}
+/*Formatting a base text for the name and getting ready for an effect to 
+be added
+*/
+header .TitleCard {
+  color: blanchedalmond;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 50px;
+}
+/*
+Gave the Name in the Header an animation transition effect using keyframes
+*/
+header .TitleCard {
+  padding: 5px;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 30px;
+}
+/*
+The keyframes are how the css transitions between each frame animation in 
+the previous brick of css showing a transition point every displayed percentage of time
+*/
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+/*
+To organize the Home, About and Portfolio buttons
+*/
+header ul {
+  font-size: 1.2em;
+  display: flex;
+  list-style: none;
+  margin-top: auto auto;
+}
+
+/* 
+added ul li to create padding between each of the buttons
+*/
+header ul li {
+  padding: 10px 20px;
+  margin: 0px 50px 0px -15px;
+}
+
+/*
+Anne (A fellow Coder) told me how to remove the underlines to get rid of the underlines and change color of the buttons
+*/
+header ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/*
+adds hover effect backgrounds to the buttons
+*/
+header ul li a:hover {
+  border-radius: 10px;
+  color: white;
+  background-color: orangered;
+}
+
+/*
+Broad stroke changes to the overall size alignement and positioning of 
+text on all the pages
+*/
+.home {
+  color: #f7f7f7;
+  height: 500px;
+  display: flex;
+  padding: 0 50px;
+  align-items: center;
+}
+
+.home-info {
+  max-width: 700px;
+}
+
+.home-text h1 {
+  font-size: 3em;
+  font-weight: 800;
+  margin-bottom: -25px;
+}
+
+.home-text h3 {
+  font-size: 1.5em;
+}
+
+.p1 {
+  font-size: 1.3em;
+  color: white;
+}
+
+.p2 {
+  margin-top: 20px;
+  font-size: 1.3em;
+  color: white;
+}
+
+.p3 {
+  margin-top: 20px;
+  font-size: 1.3em;
+  color: white;
+}
+
+.img-line {
+  margin-top: -140px;
+}
+
+/*
+Broad changes to the size of the image without spacing
+*/
+.image {
+  width: 35vmin;
+  height: 35vmin;
+  /*
+Finetuning the size of the image 
+*/
+  object-fit: cover;
+  margin: 20px -20px 10px 40px;
+  box-shadow: 5px 5px 5px #1c1e2091;
+}
