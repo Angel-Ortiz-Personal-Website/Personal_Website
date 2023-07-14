@@ -65,10 +65,9 @@ header .TitleCard {
   background-image: linear-gradient(
     -225deg,
     #231557 0%,
-    #44107a 25%,
-    #ff1361 50%,
-    #fff800 75%
-    #ff1361 100%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
   );
   background-size: auto auto;
   background-clip: border-box;
