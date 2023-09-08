@@ -1,0 +1,179 @@
+/*
+this will format all elements
+*/
+* {
+  font-family: 'Phudu', cursive;
+}
+
+:root {
+  margin: 0;
+  font-size: 16px;
+  padding: 3px;
+  font: "Gill Sans MT", sans-serif;
+}
+/*
+Adding background color and set height to the main body
+*/
+body {
+  min-height: 100px;
+  background-color: burlywood;
+}
+
+.home h1 {
+  text-align: center;
+  font-size: 4rem;
+  color: 	#00af00;
+}
+
+.home h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.home h3 {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.home p {
+  text-align: center;
+  color: white;
+  font-size: 1.7rem;
+}
+
+.img-line {
+  margin-top: -140px;
+}
+
+/*
+Broad changes to the size of the image without spacing
+*/
+.image {
+  width: 25vmin;
+  height: 25vmin;
+  object-fit: cover;
+}
+
+.Photos{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+}
+
+main {
+  margin-top: 6.2rem; /* margin to fit the navbar to the left */
+  padding: 1rem;
+}
+
+.navbar {
+  width: 100%;
+  height: 12vh;
+  top: 0;
+  left: 0;
+  position:fixed;
+  background-color: rgb(175, 145, 107);  /* to make the code cleaner, set bg colors were made for consistency, refer to :root */
+  border:rgb(100, 84, 64);
+  border-style: double;
+  border-radius: 30px;
+  border-width: 10px;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  flex-direction: row;
+}
+
+.nav-items {
+  width: 20%;
+  margin-bottom: 2rem;
+}
+
+/* This pushes the first icon logo away from the rest to create space on the navbar */
+.nav-items:first-child {
+  width: 115%;
+  margin-bottom: 3rem;
+  margin-top: 2rem
+}
+
+/*this is to give the icon links a color effect when hovering the mouse over them*/
+.nav-item:hover {
+  filter: invert(0.2) hue-rotate(150.4deg) brightness(0.9);
+  transition-duration: .5s;
+}
+
+.icon-1 {
+  width: 11vh;
+  margin-top: -1em;
+  margin-left: 3em;
+}
+
+.icon-2 {
+  width: 6vh;
+}
+
+/* img size and style in the portfolio page */
+.image {
+  width: 25vmin;
+  height: 25vmin;
+  object-fit: cover;
+  margin: .5rem .5rem .5rem 0rem;
+}
+
+.Me {
+  width: 15%;
+  position: fixed;
+  bottom: 0;
+  margin-left: 40%;
+}
+
+.about {
+  width: 1000px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.form {
+  text-align: center;
+}
+label {
+  /* block to occupy the full width */
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* added two inputs: text and email */
+input[type="text"],
+input[type="email"] {
+  background-color: #00bb4e;
+  width: 100%;
+  padding: 10px;
+  width: 40%;
+  align-items: center;
+}
+
+/* focus: change in formatting when input field is active */
+input[type="text"]:focus {
+  background: #eaecf1;
+}
+
+input[type="email"]:focus {
+  background: #eaecf1;
+}
+
+/* submit button and formatting */
+input[type="submit"] {
+  background-color: #00c53b;
+  color: #000000;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+}

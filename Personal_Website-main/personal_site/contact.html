@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- nav bar links and icons. icons are svg and are found in the resource folder -->
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        <li class="nav-items">
+          <a href="index.html" class="nav-item">
+            <img src="./pictures/mainIcon.svg" alt="logo svg" class="icon-1" />
+          </a>
+        </li>
+
+        <li class="nav-items">
+          <a href="index.html" class="nav-item">
+            <img src="./pictures/homepage.svg" alt="home svg" class="icon-2" />
+          </a>
+        </li>
+
+        <li class="nav-items">
+          <a href="about.html" class="nav-item">
+            <img
+              src="./pictures/aboutMe.svg"
+              alt="about me svg"
+              class="icon-2"
+            />
+          </a>
+        </li>
+
+        <li class="nav-items">
+          <a href="portfolio.html" class="nav-item">
+            <img
+              src="./pictures/portfolio.svg"
+              alt="portfolio svg"
+              class="icon-2"
+            />
+          </a>
+        </li>
+
+        <li class="nav-items">
+          <a href="contact.html" class="nav-item">
+            <img
+              src="./pictures/contactMe.svg"
+              alt="contact svg"
+              class="icon-2"
+            />
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- Content that holds the contact description and header -->
+      <section class="home">
+        <h1>Contact Me</h1>
+        <p>
+          Commodo elit at imperdiet dui accumsan sit amet nulla. Nisi lacus sed viverra tellus. 
+          Dis parturient montes nascetur ridiculus mus mauris vitae ultricies leo. 
+          Pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae. 
+          Cras tincidunt lobortis feugiat vivamus. Et molestie ac feugiat sed lectus. 
+          Viverra vitae congue eu consequat ac felis donec et. Pharetra et ultrices neque ornare. 
+          Malesuada pellentesque elit eget gravida cum sociis. Risus commodo viverra maecenas accumsan lacus vel. 
+          Fermentum iaculis eu non diam phasellus vestibulum.
+          Fusce ut placerat orci nulla pellentesque dignissim enim sit amet.
+        </p>
+      </section>
+
+      <!-- section to input the form -->
+      <div class="form">
+        <form id="myForm">
+          <!-- for name form (first) also made so it's required -->
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <!-- for email form (second) also made so it's required -->
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <p>
+            <!-- submit button -->
+            <input type="submit" value="Submit" />
+          </p>
+        </form>
+      </div>
+    </main>
+  </body>
+  <!-- working js script that will have a dialogue box upon submitting it successfully -->
+  <script src="email.js"></script>
+</html>
